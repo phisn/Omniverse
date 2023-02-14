@@ -15,6 +15,10 @@ RUN /opt/nvidia/omniverse/kit-sdk-launcher/kit \
 COPY hello_world.py /hello_world.py
 EXPOSE 8011/tcp
 
+# Also tried token here!
+# OMNI_PASS=\$omni-api-token
+# OMNI_USER=<token>
+
 ENTRYPOINT [ \
     "/opt/nvidia/omniverse/kit-sdk-launcher/kit", \
     "", \
