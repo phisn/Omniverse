@@ -8,6 +8,7 @@ RUN /opt/nvidia/omniverse/kit-sdk-launcher/kit \
     --ext-precache-mode \
     --enable omni.services.core \
     --enable omni.services.transport.server.http \
+    --enable omni.kit.asset_converter \
     --/exts/omni.kit.registry.nucleus/registries/0/name=kit/services \
     --/exts/omni.kit.registry.nucleus/registries/0/url=https://dw290v42wisod.cloudfront.net/exts/kit/services \
     --allow-root
@@ -26,5 +27,6 @@ ENTRYPOINT [ \
     "--enable", "omni.services.core", \
     "--enable", "omni.services.transport.server.http", \
     "--enable", "omni.client", \
+    "--enable", "omni.kit.asset_converter", \
     "--allow-root" \
 ]
